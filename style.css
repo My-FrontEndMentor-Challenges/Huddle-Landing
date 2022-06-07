@@ -32,8 +32,13 @@ nav {
   align-items: center;
 }
 .illustration {
-  width: 80%;
+  width: 400px;
   margin-top: 3rem;
+}
+.main-content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Main Text */
 .main-text {
@@ -86,4 +91,64 @@ nav {
 }
 .twitter-icon {
   margin: 0 0.5rem;
+}
+
+/* Active States */
+.register-btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  cursor: pointer;
+}
+.icon:hover {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+  .logo {
+    height: 40px;
+    margin-left: 4rem;
+  }
+  .main-content {
+    flex-direction: row;
+    height: 90vh;
+  }
+  .illustration {
+    width: 800px;
+    height: 500px;
+    object-fit: contain;
+    margin: 0 0 0 4rem;
+  }
+  .main-content-info {
+    align-items: start;
+    width: 50%;
+    height: 400px;
+    margin-left: 3rem;
+  }
+  .main-text {
+    text-align: left;
+    margin-top: 0;
+    align-items: start;
+  }
+  .main-text-title {
+    font-size: 2.3rem;
+  }
+  .main-text-p {
+    padding: 0;
+    width: 73%;
+  }
+  .register-btn {
+    padding: 0.7rem 3rem;
+  }
+  .socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 5rem 3rem 0;
+  }
 }
