@@ -67,3 +67,23 @@ nav {
   margin-top: 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Socials */
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.icon {
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.twitter-icon {
+  margin: 0 0.5rem;
+}
